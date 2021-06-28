@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">EventQRManager</string>
+    <string name="app_shortname">E</string>
+    <string name="create_event">Create Event</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_validator">Validator</string>
 </resources>
