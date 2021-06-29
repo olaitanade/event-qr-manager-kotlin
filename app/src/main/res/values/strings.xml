@@ -2,6 +2,8 @@
     <string name="app_name">EventQRManager</string>
     <string name="app_shortname">E</string>
     <string name="create_event">Create Event</string>
+    <string name="create_validation">Create Validation</string>
+    <string name="validation">Validation</string>
     <string name="title_activity_home">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
@@ -12,4 +14,7 @@
     <string name="event_description">Event Description</string>
     <string name="event_ticket_no">Event Ticket No</string>
     <string name="create">Create</string>
+    <string name="start">Start</string>
+    <string name="event_tickets">Event Tickets</string>
+    <string name="ticket">Ticket</string>
 </resources>
