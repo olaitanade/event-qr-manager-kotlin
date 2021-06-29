@@ -1,4 +1,4 @@
-package com.adetayoolaitan.eventqrmanager.ui.fragment.validator
+package com.adetayoolaitan.eventqrmanager.presentation.validator
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

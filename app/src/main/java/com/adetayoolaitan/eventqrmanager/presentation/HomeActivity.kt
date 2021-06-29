@@ -1,4 +1,4 @@
-package com.adetayoolaitan.eventqrmanager.ui.activity
+package com.adetayoolaitan.eventqrmanager.presentation
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

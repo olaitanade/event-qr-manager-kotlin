@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.adetayoolaitan.eventqrmanager.ui.fragment.home.HomeFragment"
+        android:name="com.adetayoolaitan.eventqrmanager.presentation.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.adetayoolaitan.eventqrmanager.ui.fragment.search.SearchFragment"
+        android:name="com.adetayoolaitan.eventqrmanager.presentation.search.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/navigation_validator"
-        android:name="com.adetayoolaitan.eventqrmanager.ui.fragment.validator.ValidatorFragment"
+        android:name="com.adetayoolaitan.eventqrmanager.presentation.validator.ValidatorFragment"
         android:label="@string/title_validator"
         tools:layout="@layout/fragment_validator" />
 </navigation>

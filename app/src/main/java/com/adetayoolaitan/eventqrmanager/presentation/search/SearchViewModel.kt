@@ -1,4 +1,4 @@
-package com.adetayoolaitan.eventqrmanager.ui.fragment.search
+package com.adetayoolaitan.eventqrmanager.presentation.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

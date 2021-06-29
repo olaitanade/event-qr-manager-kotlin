@@ -1,4 +1,4 @@
-package com.adetayoolaitan.eventqrmanager.ui.fragment.home
+package com.adetayoolaitan.eventqrmanager.presentation.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

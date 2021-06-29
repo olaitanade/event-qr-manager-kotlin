@@ -1,4 +1,4 @@
-package com.adetayoolaitan.eventqrmanager.ui.fragment.search
+package com.adetayoolaitan.eventqrmanager.presentation.validator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.adetayoolaitan.eventqrmanager.databinding.FragmentSearchBinding
+import com.adetayoolaitan.eventqrmanager.databinding.FragmentValidatorBinding
 
-class SearchFragment : Fragment() {
+class ValidatorFragment : Fragment() {
 
-    private lateinit var searchViewModel: SearchViewModel
-    private var _binding: FragmentSearchBinding? = null
+    private lateinit var validatorViewModel: ValidatorViewModel
+    private var _binding: FragmentValidatorBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,14 +24,14 @@ class SearchFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        searchViewModel =
-            ViewModelProvider(this).get(SearchViewModel::class.java)
+        validatorViewModel =
+            ViewModelProvider(this).get(ValidatorViewModel::class.java)
 
-        _binding = FragmentSearchBinding.inflate(inflater, container, false)
+        _binding = FragmentValidatorBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textEvent
-        searchViewModel.text.observe(viewLifecycleOwner, Observer {
+        val textView: TextView = binding.textNotifications
+        validatorViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
