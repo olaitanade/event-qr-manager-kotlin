@@ -1,5 +1,6 @@
 package com.adetayoolaitan.eventqrmanager.presentation.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.adetayoolaitan.eventqrmanager.databinding.FragmentHomeBinding
+import com.adetayoolaitan.eventqrmanager.presentation.event.EventActivity
 
 class HomeFragment : Fragment() {
 
@@ -33,6 +35,14 @@ class HomeFragment : Fragment() {
         val textView: TextView = binding.textQuote
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
+        })
+        val btnCreateEvent = binding.btnCreateEvent
+        btnCreateEvent.setOnClickListener({
+            val intent = Intent(context, EventActivity::class.java).apply {
+                putExtra("type","create")
+                putExtra("id",0)
+            }
+            startActivity(intent)
         })
         return root
     }

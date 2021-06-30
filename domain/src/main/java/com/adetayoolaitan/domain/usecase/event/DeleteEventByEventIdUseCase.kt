@@ -7,7 +7,7 @@ class DeleteEventByEventIdUseCase @Inject constructor(
     private val repository: EventRepository
 ) {
 
-    suspend fun execute(eventId:String){
+    suspend fun execute(eventId:Int){
         repository.deleteEventByEventId(eventId)
     }
 
