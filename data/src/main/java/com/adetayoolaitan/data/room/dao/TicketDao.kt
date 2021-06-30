@@ -10,7 +10,10 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface TicketDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertTickets(tickets: Ticket)
+    suspend fun insertTicket(ticket: Ticket)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertTickets(tickets: List<Ticket>)
 
     @Query("SELECT * FROM tickets ORDER BY datetime_added DESC")
     fun getTickets(): Flow<List<Ticket>>

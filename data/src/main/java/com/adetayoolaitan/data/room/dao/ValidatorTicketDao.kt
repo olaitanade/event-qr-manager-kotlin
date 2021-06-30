@@ -12,6 +12,9 @@ interface ValidatorTicketDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertValidatorTicket(validatorTicket: ValidatorTicket)
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertValidatorTickets(validatorTickets: List<ValidatorTicket>)
+
     @Query("SELECT * FROM validator_tickets ORDER BY datetime_added DESC")
     fun getValidatorTickets(): Flow<List<ValidatorTicket>>
 

@@ -2,7 +2,7 @@ package com.adetayoolaitan.domain.model
 
 data class Ticket(
     val ticketId:String,
-    val eventId:Int,
+    val eventId:String,
     val description:String?=null,
     val deleted:String?=null,
     val datetimeAdded:String?=null,

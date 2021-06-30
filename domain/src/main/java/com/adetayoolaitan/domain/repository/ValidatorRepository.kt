@@ -8,7 +8,7 @@ interface ValidatorRepository {
 
     suspend fun insertValidator(event: Event)
 
-    suspend fun deleteValidatorByEventId(title:String)
+    suspend fun deleteValidatorByEventId(eventId:String)
 
     suspend fun deleteAllValidators()
 }

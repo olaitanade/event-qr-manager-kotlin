@@ -8,7 +8,7 @@ interface TicketRepository {
 
     suspend fun insertTicket(event: Event)
 
-    suspend fun deleteTicketByEventId(title:String)
+    suspend fun deleteTicketByEventId(eventId:String)
 
     suspend fun deleteAllTickets()
 }

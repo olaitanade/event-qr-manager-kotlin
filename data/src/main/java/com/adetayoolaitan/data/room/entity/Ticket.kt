@@ -9,7 +9,7 @@ data class Ticket(
     @PrimaryKey
     @ColumnInfo(name = "ticket_id") val ticketId:String,
 
-    @ColumnInfo(name = "event_id") val eventId:Int,
+    @ColumnInfo(name = "event_id") val eventId:String,
     @ColumnInfo(name = "description") val description:String?=null,
     @ColumnInfo(name = "deleted") val deleted:String?=null,
     @ColumnInfo(name = "datetime_added") val datetimeAdded:String?=null,

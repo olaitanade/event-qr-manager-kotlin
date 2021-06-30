@@ -1,7 +1,7 @@
 package com.adetayoolaitan.domain.model
 
 data class Validator(
-    val validatorId:Int,
+    val validatorId:String,
     val name:String,
     val eventId:Int,
     val ticketsValidated:Int?=null,

@@ -13,7 +13,7 @@ import com.adetayoolaitan.data.room.entity.ValidatorTicket
 
 @Database(
     entities = [Event::class, Ticket::class, Validator::class,ValidatorTicket::class],
-    version = 1
+    version = 2
 )
 abstract class EventQRManagerDB: RoomDatabase() {
     abstract fun getEventDao():EventDao

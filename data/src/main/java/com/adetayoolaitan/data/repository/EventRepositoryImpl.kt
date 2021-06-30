@@ -20,7 +20,7 @@ class EventRepositoryImpl(
         localDataSource.insertEvent(event)
     }
 
-    override suspend fun deleteEventByEventId(eventId: Int) {
+    override suspend fun deleteEventByEventId(eventId: String) {
         localDataSource.deleteEventByEventId(eventId)
     }
 

@@ -17,7 +17,7 @@ class LocalDataSource @Inject constructor(
 
     fun getEvents() = dao.getEvents()
 
-    suspend fun deleteEventByEventId(eventId:Int) = dao.deleteEventByEventId(eventId)
+    suspend fun deleteEventByEventId(eventId:String) = dao.deleteEventByEventId(eventId)
 
     suspend fun deleteAllEvents() = dao.deleteAllEvents()
 

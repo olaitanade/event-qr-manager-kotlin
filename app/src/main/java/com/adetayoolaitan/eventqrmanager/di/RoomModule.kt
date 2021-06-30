@@ -21,7 +21,8 @@ object RoomModule {
         app,
         EventQRManagerDB::class.java,
         "EventQRManagerDB.db"
-    ).fallbackToDestructiveMigration()
+    )
+        .fallbackToDestructiveMigration()
         .build()
 
     @Singleton

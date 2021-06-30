@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.navigation.findNavController
 import com.adetayoolaitan.eventqrmanager.R
 import com.adetayoolaitan.eventqrmanager.databinding.ActivityEventBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class EventActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityEventBinding

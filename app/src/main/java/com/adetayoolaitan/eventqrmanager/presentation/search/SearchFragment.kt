@@ -9,7 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.adetayoolaitan.eventqrmanager.databinding.FragmentSearchBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SearchFragment : Fragment() {
 
     private lateinit var searchViewModel: SearchViewModel
@@ -34,6 +36,11 @@ class SearchFragment : Fragment() {
         searchViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
+        searchViewModel.events.observe(viewLifecycleOwner,{
+            textView.text = it.size.toString()
+        })
+
+        searchViewModel.getEvents()
         return root
     }
 
